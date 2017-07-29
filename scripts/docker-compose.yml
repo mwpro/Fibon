@@ -7,15 +7,17 @@ services:
       - rabbitmq
     command: rabbitmq:5672
 
-  api: 
-    build: ../src/Fibon.Api
+  api:
+    image: mwpro/fibon-api
+    #build: ../src/Fibon.Api
     #links: 
     #  - rabbitmq
     ports: 
       - '5000:5000'
 
   service:
-    build: ../src/Fibon.Service
+    image: mwpro/fibon-service
+    # build: ../src/Fibon.Service
     #links:
     #  - rabbitmq
     #ports:
