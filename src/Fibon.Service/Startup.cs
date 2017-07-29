@@ -35,6 +35,7 @@ namespace Fibon.Service
             // Add framework services.
             services.AddMvc();
             ConfigureRabbitMq(services);
+            services.AddTransient<ICalculator, Calculator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
