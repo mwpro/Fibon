@@ -11,6 +11,7 @@ namespace Fibon.Messages
     public class ValueCalculated : IEvent
     {
         public int Number { get; set; }
+        public int Result { get; set; }
     }
 
     public interface IEventHandler<in T> where T : IEvent

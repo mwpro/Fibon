@@ -49,5 +49,26 @@ namespace Fibon.Api.Controllers
     public interface IRepository
     {
         int? Get(int number);
+        void Insert(int number, int result);
+    }
+
+    public class Repository : IRepository
+    {
+        private Dictionary<int, int> _data = new Dictionary<int, int>();
+
+        public int? Get(int number)
+        {
+            if (_data.TryGetValue(number, out int result))
+            {
+                return result;
+            }
+
+            return null;
+        }
+
+        public void Insert(int number, int result)
+        {
+            _data.Add(number, result);
+        }
     }
 }
