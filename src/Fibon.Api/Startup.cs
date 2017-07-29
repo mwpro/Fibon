@@ -26,6 +26,8 @@ namespace Fibon.Api
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            System.Console.Out.WriteLine(env.EnvironmentName);
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -64,6 +66,8 @@ namespace Fibon.Api
             var options = new RabbitMqOptions();
             var section = Configuration.GetSection("rabbitmq");
             section.Bind(options);
+
+            System.Console.Out.WriteLine(string.Join(", ", options.Hostnames));
 
             var client = BusClientFactory.CreateDefault(options);
             serviceCollection.AddSingleton<IBusClient>(_ => client);
