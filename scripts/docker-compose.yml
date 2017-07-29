@@ -9,19 +9,19 @@ services:
 
   api: 
     build: ../src/Fibon.Api
-    links: 
-      - rabbitmq
+    #links: 
+    #  - rabbitmq
     ports: 
       - '5000:5000'
 
   service:
     build: ../src/Fibon.Service
-    links:
-      - rabbitmq
-    ports:
-      - '5050:5050'
+    #links:
+    #  - rabbitmq
+    #ports:
+    #  - '5050:5050'
 
   rabbitmq:
     image: rabbitmq:latest
-    ports:
-      - '5672:5672'
+    #ports:
+    #  - '5672:5672'
