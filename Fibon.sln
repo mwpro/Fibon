@@ -1,0 +1,69 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64667F02-DF2A-491B-9EF5-BA008C064227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibon.Api", "src\Fibon.Api\Fibon.Api.csproj", "{90016998-10D2-40C5-A9E1-EA51514382AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibon.Messages", "src\Fibon.Messages\Fibon.Messages.csproj", "{87D96121-31F5-4C52-BAD7-957ADBAE8D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibon.Service", "src\Fibon.Service\Fibon.Service.csproj", "{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Debug|x64.ActiveCfg = Debug|x64
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Debug|x64.Build.0 = Debug|x64
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Debug|x86.ActiveCfg = Debug|x86
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Debug|x86.Build.0 = Debug|x86
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Release|x64.ActiveCfg = Release|x64
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Release|x64.Build.0 = Release|x64
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Release|x86.ActiveCfg = Release|x86
+		{90016998-10D2-40C5-A9E1-EA51514382AB}.Release|x86.Build.0 = Release|x86
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Debug|x64.ActiveCfg = Debug|x64
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Debug|x64.Build.0 = Debug|x64
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Debug|x86.ActiveCfg = Debug|x86
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Debug|x86.Build.0 = Debug|x86
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Release|x64.ActiveCfg = Release|x64
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Release|x64.Build.0 = Release|x64
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Release|x86.ActiveCfg = Release|x86
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30}.Release|x86.Build.0 = Release|x86
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Debug|x64.ActiveCfg = Debug|x64
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Debug|x64.Build.0 = Debug|x64
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Debug|x86.ActiveCfg = Debug|x86
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Debug|x86.Build.0 = Debug|x86
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Release|x64.ActiveCfg = Release|x64
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Release|x64.Build.0 = Release|x64
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Release|x86.ActiveCfg = Release|x86
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90016998-10D2-40C5-A9E1-EA51514382AB} = {64667F02-DF2A-491B-9EF5-BA008C064227}
+		{87D96121-31F5-4C52-BAD7-957ADBAE8D30} = {64667F02-DF2A-491B-9EF5-BA008C064227}
+		{99AAFC64-75AF-4C70-A751-C5A24C1FF9EF} = {64667F02-DF2A-491B-9EF5-BA008C064227}
+	EndGlobalSection
+EndGlobal

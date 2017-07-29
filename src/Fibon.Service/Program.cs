@@ -7,20 +7,20 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
-namespace Fibon.Api
+namespace Fibon.Service
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var config = new ConfigurationBuilder()
-                            .AddEnvironmentVariables()
-                            .AddCommandLine(args)
-                            .Build();
+            var configuration = new ConfigurationBuilder()
+                .AddEnvironmentVariables()
+                .AddCommandLine(args)
+                .Build();
 
             var host = new WebHostBuilder()
+                .UseConfiguration(configuration)
                 .UseKestrel()
-                .UseConfiguration(config)
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
